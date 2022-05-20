@@ -1,0 +1,74 @@
+{
+    "name": "PayerInputControl",
+    "maps": [
+        {
+            "name": "Touch",
+            "id": "44453e87-17d9-4926-9d3b-c12275a1b183",
+            "actions": [
+                {
+                    "name": "PrimaryContact",
+                    "type": "PassThrough",
+                    "id": "ae3be4fd-34a5-417b-8fe4-5871b3319772",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PrimaryPositition",
+                    "type": "PassThrough",
+                    "id": "ad21a081-6c59-44fb-bae3-4915a98034db",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "mouseDown",
+                    "type": "PassThrough",
+                    "id": "26d0973b-5ad7-4efa-9d1c-2137ec57dd65",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "ffaab767-054a-47a7-9a12-750f31cdd3b4",
+                    "path": "<Touchscreen>/primaryTouch/press",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PrimaryContact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "399f4ba6-83c0-4f4f-b88d-55b0b66e9d41",
+                    "path": "<Touchscreen>/touch0/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PrimaryPositition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "618d14f1-33d2-4798-b028-3d4065c10008",
+                    "path": "<Touchscreen>/primaryTouch/tap",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "mouseDown",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
